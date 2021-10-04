@@ -6,7 +6,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [searchText, setSearchText] = useState("a");
+  const [searchText, setSearchText] = useState("");
   const [cocktails, setCocktails] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,6 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(`${url}${searchText}`);
       const data = await response.json();
-      console.log("data :", data);
       const { drinks } = data;
       if (drinks) {
         const newCocktails = drinks.map((drink) => {
