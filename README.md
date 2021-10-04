@@ -1,12 +1,8 @@
-#### React Router Fix
+# Deployed site
 
-(Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
+Check it out [here](https://luft-react-cocktails.netlify.app)
 
-#### CRA Fix
+# Description
 
-```
-
-"build": "CI= react-scripts build",
-
-```
-# react-cocktails
+Simple react app used to learn how to create a search UI for a cocktails API.
+![alt text](https://i.imgur.com/ofZfXM3.png)
